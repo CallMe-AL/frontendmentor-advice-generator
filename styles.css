@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --darkish-grayish-blue: hsl(217, 19%, 24%);
+  --darkish-blue: hsl(218, 23%, 16%);
+}
+
+html {
+  font-size: 28px;
+  font-family: "Manrope", sans-serif;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  justify-content: center;
+  color: var(--light-cyan);
+  background-color: var(--darkish-blue);
+  padding: 0 15px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--neon-green);
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* advice box styles */
+
+.advice-box {
+  min-height: 350px;
+  max-width: 500px;
+  justify-content: center;
+  margin-top: auto;
+  border-radius: 10px;
+  padding: 50px 15px;
+  background-color: var(--darkish-grayish-blue);
+
+  position: relative;
+}
+
+.advice-number {
+  color: var(--neon-green);
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.advice-text {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.change-advice-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  transition: box-shadow 0.2s ease-in;
+
+  background-color: var(--neon-green);
+  padding: 20px;
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.change-advice-btn:hover {
+  box-shadow: 0px 0px 10px var(--neon-green);
+}
+
+.change-advice-btn:active {
+  box-shadow: 0px 0px 20px var(--neon-green);
+}
+
+/* attribution */
+
+.attribution {
+  margin-top: auto;
+  font-size: 0.5rem;
+  padding: 10px 0;
+}
